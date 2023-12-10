@@ -9,60 +9,65 @@
             margin: 0;
             padding: 0;
         } 
+        header{
+            position:sticky;
+            top: 0;
+        }
         nav {
             height: 70px;
             background-color: rgb(255, 192, 206);
-            position:sticky;
+            
         }
-               
-        .biger{
-            display: flex;
-            height: 70vh;
-            background-color: green;
-            border: 1px solid;
-        }
-        .box{
-            display: flex;
-            border: 1px solid;
-            width: 165px;
-            height: 165px;
-            padding: 30px;
-            background-color: rgb(223, 205, 255);
-        }
-        .box1{
-          margin: 155px 75px 25px 200px ;
-          background-color: rgb(223, 205, 255);
-        }
-        .box2{
-            margin: 155px 75px 25px 700px ;
-            background-color: blue;
-        }
-        .fix{
-           
-            margin-left: 97%;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            position: fixed;
-            background-color: aqua;  
-        }
-        .bellow{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width:60vw;
-            height: 70px;
+           main{
             background-color: black;
             color: white;
+            padding: 34px;
+           }    
+        .biger{
+            
+            background-color: green;
+            margin:12px 34px;
+            padding: 55px 23px;
+            text-align: center;
+        }
+        
+       .box1{
+            background-color: rgb(223, 205, 255);
+            width: 45%;
+            height: 70vh;
+            display: inline-block;
+            margin: 0px 12px;
+        }
+        .box2{
+            background-color: blue;
+            width: 45%;
+            height: 70vh;
+            display: inline-block;
+            margin: 0px 12px;
+        }
+        .fix{
+            width: 35px;
+            height: 35px;
+            background-color:orange;  
+            position: fixed;
+            border-radius: 50%;
+            bottom: 12px;
+            right: 23px;
+            
+        }
+        .bellow{
+            padding: 34px;
+            border: 2px solid white;
+            margin: 50px 34vw ;
+            font-size: 2em;
             border-radius: 20px;
-            border: 1px solid white;
-            margin: 30px 22% ;
-            padding: 20px;
-            padding-bottom: 0px;
+            color: white;
+            
+           
         }
         footer{
             background-color: aquamarine;
-            height: 60px;
+            height: 100px;
         }
     </style>
 </head>
@@ -74,13 +79,13 @@
     </header>
     <main>
         <div class="biger">
-            <div class="box box1"></div>
-            <div class="box box2"></div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="bellow">
+            Welcome to my  web site.
         </div>
         <div class="fix"></div>
-        <div class="bellow">
-            Welcome to my Task web site.
-        </div>
     </main>
     <footer>
         <div></div>
