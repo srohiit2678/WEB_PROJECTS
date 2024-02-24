@@ -1,0 +1,144 @@
+<html>
+<title> Calculator </title>
+<head>
+<style>
+h1{
+	width:900px;
+	border: 10px double white;
+	border-radius: 10px;
+	text-align:center;
+	color:white;
+	background-color:black;
+}
+body{
+	margin:5px;
+	padding:5px;
+	background-color:#006A4E;
+}
+table{ 
+	margin:5 px;
+	border:9px outset yellow;
+	border-radius:10px;
+	background-color:#00008b;
+	width:90%;
+	hiegth:100%;
+}
+input[type="button"]{
+	border: 1px solid black;
+	border-style: double;
+	border-radius: 10px;
+	width:100%;
+	hiegth:100%;
+	padding:20px 30px;
+	text-align:center;
+	color:blue;
+	font-size:30px;
+	background-color:light green;
+}
+input[type="text"]{
+	padding:10px 300px;
+	font-size:20px;
+	border:5px double bold blue:
+	
+}
+</style>
+<h1> Scientific calculator</h1>
+<script >
+function calculate() {
+    let result= document.getElementById("result");
+    let expression = result.value;
+    let temp;
+ 
+    try {
+        // Convert trigonometric function inputs from degrees to radians
+        expression = expression.replace(/sin\(/g, 'sin(' + Math.PI / 180 + '*');
+        expression = expression.replace(/cos\(/g, 'cos(' + Math.PI / 180 + '*');
+        expression = expression.replace(/tan\(/g, 'tan(' + Math.PI / 180 + '*');
+ 	  
+        temp = math.evaluate(expression);
+        result.value = temp;
+    } catch (error) {
+        result.value = "Error";
+    }
+    
+function squareRoot() {
+	result.value=Math.sqrt(result.value,2);
+}
+
+function base10Log() {
+	
+	result.value =Math.log(result.value);
+}
+
+function pi() {
+	
+	result.value =3.14 ;
+}
+
+function e() {
+	
+	result.value = 2.7;
+}
+
+function power() {
+	result.value=Math.pow(result.value,2);
+}
+
+</script>
+</head>
+<body>
+<table>
+<tr>
+<td colspan="6"><input type="text" id="result">
+</td>
+
+<td background-color="grey"><input type="button" value="C" onclick="result.value=''"></td>
+</tr>
+<tr>
+<td><input type="button" value="sin("onClick="result.value=Math.sin(result.value)"></td>
+<td><input type="button" value="cos(" onClick="result.value=Math.cos(result.value)"></td>
+<td><input type="button" value="tan("onClick="result.value=Math.tan(result.value)"></td>
+<td><input type="button" value="7"onclick="result.value+='7'"></td>
+<td><input type="button" value="8"onClick="result.value+='8'"></td>	
+<td><input type="button" value="9"onClick="result.value+='9'"></td>
+<td><input type="button" value=")"onClick="result.value+=')'"></td>
+</tr>
+<tr>
+<td><input type="button" value="^"onClick="result.value+='power()"></td>
+<td><input type="button" value="log"onClick="result.value=Math.log(result.value)"></td>
+<td><input type="button" value="ln"onClick="result.value+='MATH.LN2'"></td>
+<td><input type="button" value="4"onClick="result.value='4'"></td>
+<td><input type="button" value="5"onClick="result.value+='5'"></td>
+<td><input type="button" value="6"onClick="result.value+='6'"></td>
+<td><input type="button" value="+"onClick="result.value+='+'"></td>
+</tr>
+<tr>
+<td><input type="button" value="e"onClick="result.value+='2.71828'"></td>
+<td><input type="button" value="𝝅"onClick="result.value+='3.1451'"></td>
+<td><input type="button" value="√"onClick="result.value=Math.sqrt(result.value,2)"></td>
+<td><input type="button" value="1"onClick="result.value+='1'"></td>
+<td><input type="button" value="2"onClick="result.value+='2'"></td>
+<td><input type="button" value="3"onClick="result.value+='3'"></td>
+<td><input type="button" value="*"onClick="result.value+='*'"></td>
+</tr>
+<!--<tr>
+<td><input type="button" value="radian"onClick="result.value+='radian'"></td>
+<td><input type="button" value="degree"onClick="result.value+='degree'"></td>
+<td><input type="button" value="∛"onClick="result.value+='∛'"></td>
+<td><input type="button" value="1" onclick="result.value+='1'"></td>
+<td><input type="button" value="2" onclick="result.value+='2'"></td>
+<td><input type="button" value="3" onclick="result.value+='3'"></td>
+<td><input type="button" value="+" onclick="result.value+='+'"></td>
+</tr>-->
+<tr>
+<td><input type="button" value="00"onclick="result.value+='00'"></td>
+<td><input type="button" value="0"onclick="result.value+='0'"></td>
+<td><input type="button" value="."onclick="result.value+='.'"></td>
+<td><input type="button" value="/"onclick="result.value+='/'"></td>
+<td><input type="button" value="%"onclick="result.value+='%'"></td>
+<td><input type="button" value="=" onclick="result.value=eval(result.value)"></td>
+<td><input type="button" value="-"onclick="result.value+='-'"></td>
+</tr>
+</table>
+</body>
+</html>
