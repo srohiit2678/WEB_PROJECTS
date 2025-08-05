@@ -1,0 +1,119 @@
+
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .logo img {
+        width: 164px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .right ul {
+        display: flex;
+        gap: 34px;
+      }
+      .right ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      ul li span {
+        padding: 5px;
+      }
+      li img {
+        width: 15px;
+        height: 15px;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        margin: 50px;
+        font-family: sans-serif;
+      }
+      .first span {
+        font-size: 40px;
+      }
+      .first span img {
+        margin-right: 15px;
+      }
+
+      .first p {
+        font-size: 23px;
+        width: 53vw;
+        text-align: center;
+      }
+      .btn{
+        background: #00b6d1;
+        padding: 12px 14px;
+        margin: 4px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 700;
+      }
+      .flex {
+        display: flex;
+      }
+     
+     
+      .sec2 {
+       max-width: 70vw;
+       margin: auto;
+       
+      }
+      .green{
+        background-color: #5cb85c;
+      }
+      .item{
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius:12px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+    .item-lang{
+        font-size: 600;
+        text-align: center;
+        padding-bottom: 36px;
+        
+    }
+   
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:30px;
+    }
+    .download {
+        display: flex;
+        flex-direction: row;
+        
+        padding: 40px 0px 40px 0px;
+
+    }
+    
+   .two{
+   
+    margin-left: 20px;
+    font-size: 25px;
+
+   }
+   .small {
+    margin-top: 12px;
+    margin-left: 2px;
+    font-size: 15px;
+  }
+
+  @media screen and(max-width:900px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:30px;
+    }
+  }
